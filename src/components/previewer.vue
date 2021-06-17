@@ -170,7 +170,7 @@ export default {
       this.photoswipe && this.photoswipe.next()
     },
     handleDelete() {
-      this.$emit('on-delete')
+      this.$emit('on-delete', this.getCurrentIndex())
     }
   }
 }
